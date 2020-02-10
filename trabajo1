@@ -1,0 +1,36 @@
+package codigo_para_notas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author tached
+ */
+public class Codigo_para_notas {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n,cu = 0;
+        float notaM;
+        System.out.print("Indique la cantidad de notas a digitar: ");
+        n = s.nextInt();
+        float[] nota = new float[n];
+        int[] codigo = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Ingrese el codigo del estudiante: ");
+            codigo[i] = s.nextInt();
+            System.out.print("Ingrese la nota del estudiante: ");
+            nota[i] = s.nextFloat();
+        }
+        notaM=nota[1];
+        for (int i=0;i<n;i++){
+            if (notaM<nota[i]){
+                notaM=nota[i];   
+            }
+            cu=codigo[i];    
+        }
+        System.out.println("La nota mas alta es: "+notaM);
+        System.out.println("El estudiante es: "+cu);
+    }
+
+}
