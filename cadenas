@@ -1,0 +1,52 @@
+package cadenas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author tached
+ */
+public class Cadenas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /*int a,sw=0;
+        Scanner s = new Scanner(System.in);
+        String b = new String();
+        b = s.nextLine();
+        for (int i = 0; i < b.length(); i++) {
+            String k=b.substring(i,i+1);
+            if (k.compareTo("1")!=0 && k.compareTo("2")!=0 && k.compareTo("3")!=0 && k.compareTo("4")!=0 && k.compareTo("5")!=0
+                 && k.compareTo("6")!=0 && k.compareTo("7")!=0 && k.compareTo("8")!=0 && k.compareTo("9")!=0 && k.compareTo("0")!=0){
+                 sw=1;
+            }
+        }
+        if (sw==1){
+            System.out.println("El dato "+b+" no es un numero entero");
+        } else {
+            a=Integer.parseInt(b)*2;
+            System.out.println ("El dato "+a+" es un número entero correcto");
+        }//dado un dato decimal y multiplica por 2*/
+    float u;int ss=0;
+        Scanner e = new Scanner(System.in);
+        String o = new String();
+        o = e.nextLine();
+        for (int i = 0; i < o.length(); i++) {
+            String w=o.substring(i,i+1);
+            if (w.compareTo("1")!=0 && w.compareTo("2")!=0 && w.compareTo("3")!=0 && w.compareTo("4")!=0 && w.compareTo("5")!=0
+                 && w.compareTo("6")!=0 && w.compareTo("7")!=0 && w.compareTo("8")!=0 && w.compareTo("9")!=0 && w.compareTo("0")!=0
+                    && w.compareTo(".")!=0){
+                 ss=1;
+            }
+        }
+        if (ss==1){
+            System.out.println("El dato "+o+" no es un numero decimal");
+        } else {
+            System.out.println ("El dato "+o+" es un número decimal correcto");
+        }
+    }
+    
+}
+
